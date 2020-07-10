@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html><!-- Head -->
-<head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html>
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-		
-		<title>Leslie Reichbaum's Porfolio </title>
-		<link rel="stylesheet" type="text/css" href="./css/Portfolio.css">
-	</head>
+<!-- Head -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Leslie Reichbaum's Portfolio</title>
+		  <link rel="stylesheet" type="text/css" href="./css/Portfolio.css">
+	
+		</head>
+		  
 
 <!-- Body -->
 <body class="Background"> 
 
 <!-- Navbar -->
 	<div class="Navbar">
-		<a class="active" href="">Home</a> 
+		<a class="active" href="#Home">Home</a> 
+		<a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
 		<a href="#About">About</a>
 		<a href="#GitHub">GitHub</a>
-		<a href="#Contact">Contact</a>
+		<a onclick="openForm()" ondblclick="closeForm()">Contact</a> <!-- This makes it so that our openForm function runs when we click Contact on the nav bar -->
 	</div>
 
 <!-- Home -->
+	<div id="Home">
 		<br> <!-- Breaks inserted to add space between navbar and first heading -->
 		<br>
-
+		
 <!-- Video -->
-	<div id="Home">
-		<video autoplay="" muted="" loop="" id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+		<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
 			<source src="./images/ocean_bird.mp4" type="video/mp4">
 			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
 		</video>
@@ -38,84 +36,132 @@
 
 <!-- Video text --> 
 	<div class="Video_Text"> 
-		<h1 style="color: white;">Leslie Reichbaum's Porfolio</h1>
+		<h1 style="color:white;">Leslie Reichbaum's Portfolio</h1>
 			<p> 
-				<strong>
-					</strong></p><center><strong>
+			  <strong>
+					<center>
 						<q>The power of imagination makes us infinite.
 						</q>	
-						<br>-Johm Muir<br>
+						<br>-John Muir<br>
 						<br>
-						Welcome to my portfolio website - 
-						Thank you for stopping by and enjoy! 
-					</strong></center><strong>	
-				</strong>
-			<p></p> 
+						Welcome to my portfolio website! <br>
+						<br>
+						<br>Thank you for stopping by and please reach out if you have any questions.
+					</center>	
+			  </strong>				
+			</p> 
 	</div>
+
+<!-- Slideshow section -->
+  <div id="Slideshow">
+    <div id="Slideshow_Background"> 
+      <div id="Slideshow_Container">
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">1 / 4</div>
+            <img class="Slide_Show_Images" src="./images/photo.jpg" style="width:100%">
+              <div class="text">I'm available to assist you on your project!</div>
+        </div>
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">2 / 4</div>
+            <img class="Slide_Show_Images" src="./images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
+              <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">3 / 4</div>
+            <img class="Slide_Show_Images" src="./images/C_Sharp_and_Dot_NET.png" style="width:100%">
+              <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+        </div>
+
+		<div class="mySlides fade">
+	      <div class="Slide_Number">4 / 4</div>
+			<img class="Slide_Show_Images" src="./images/SQL_and_Database.jpg" style="width:100%">
+              <div class="text">back end development, databases and SQL.</div>
+			</div>
+
+	
+		  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+		
+	  </div>
+  <br>
+
+      <div style="text-align:center">
+ 
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+
+      </div>
+    </div>
+  </div>
+
+
 
 <!-- About section -->
-	<div class="Row" id="About"> 
-		<div class="Column_2"> <!-- Left column -->
-			<img src="./images/photo.jpg" alt="photo">
-		</div>
-  
-		<div class="Column_1"> <!-- Right column -->
-			<h1>About</h1>
-				</p>I am a junior software developer from Cleveland, OH. I am a graduate of The Tech Academy</a>’s .Net/C# Bootcamp, and trained and experienced in HTML, CSS, JavaScript, SQL, C# and more. <br><br> Before studying programming, I was a learning specialist
-				    in California and Ohio where I developed a passion for using assistive technology to work with students. 
-					I hold an M.A. in Education and have years of professional experience working in collaborative environments. <br> <br>Outside of developing software, I enjoy writing music and traveling.<br>
-				</p>
-		</div>
+  <div class="Row" id="About"> 
+	<div class="Column_2"> <!-- Left column -->
+	  <img src="./images/Development.jpg" alt="Laptop">
 	</div>
-
-
+  
+	<div class="Column_1"> <!-- Right column -->
+	  <h1>About</h2>
+	    <p>I am junior software developer from Cleveland, Oh and a graduate of The Tech Academy's .Net/C# Bootcamp where I studied HTML, CSS, JavaScript, and SQL, in addition to C#/.Net. <br><br> Before studying programmning, I was a learning specialist in California and Ohio where I developed a passion for using assistive technology to empower my students. I hold an M.A. in Education and have years of professional experience working in collaborative environments.<br><br>Outside of developing software, I enjoy writing and playing music, rewatching Twin Peaks and taking roadtrips.</p>
+	</div>
+  </div>
 
 <!-- GitHub section -->
 	<div class="Row" id="GitHub">
 		<div class="Column_1"> <!-- Left column -->
 			<h1>GitHub</h1>
-				<p>To view my code...<br>
-				</p><center><a href="https://github.com/lesliereichbaum" target="_blank">Click here</a></center><p></p>
+				<p>You can view my projects on my GitHub:<br>
+				<center><a href="https://github.com/lesliereichbaum" target="_blank">Click to see my work</a></center></p>
 		</div>
 		
-		<div class="Column_2"> <!-- Right column for Portfolio? -->
-			<a href="https://github.com/lesliereichbaum" target="_blank"><img src="./images/github_image.jpg" alt="github"></a>
+		<div class="Column_2"> <!-- Right column -->
+			<a href="https://github.com/lesliereichbaum" target="_blank"><img src="./images/GitHub.png" alt="GitHub"></a>
 		</div>
 	</div>
+</div>
 
 <!-- Contact section -->
-	<div class="Row" id="Contact"> 
-		<div class="Column_3"> <!-- Contact image, left column -->
-			<a href="https://www.linkedin.com/in/leslie-reichbaum-1292051a9/">
-			<img src="./images/linkedin_image.jpg" alt="Contact_Image"></a>
-		</div>
+  <div id="Contact"> 
+    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+	  <div class="form-popup" id="myForm">
+	    <form action="https://formspree.io/mrgyynvr" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+		<h1>Contact</h1>
+			<label for="name"><b>Name</b></label>
+			  <input type="text" placeholder="Type your name here" name="name" required>
+			<label for="phone"><b>Phone (optional)</b></label>
+			  <input type="text" placeholder="Enter your phone number here" name="phone">
+			<label for="email"><b>Email</b></label>		
+			  <input type="text" placeholder="Type your email address here" name="email" required>
+			<label for="message"><b>Message</b></label>
+			  <input type="text" placeholder="Type your message here" name="message">
+ 
+    <button type="submit" class="btn">SUBMIT</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+	    </form>
+	  </div>
+  </div>
 	
-		<div class="Column_1"> <!-- Contact form, right "column" -->
-			<h1>Contact Me</h1> 
-				<form action="file:///C:/Users/Student/Downloads/sample_index%20(2).html" method="get"> <!-- This specifies where to send the form data and how; it is left blank -->
-					<label>Name:</label>
-						<input type="text" placeholder="Please enter your name here">
-					<label>Email:</label>
-						<input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-					<label>Message:</label>
-						<input type="text" id="Message" name="Message" placeholder="Please write your message here">
-						<input type="submit" value="Submit">
-				</form>
-		</div>
-	</div>
-	
-<!-- Footer section -->
+<!-- Footer section -->	
 	<footer>
-		<p>
-			</p><center>lreichbaum@gmail.com | <a href="">Leslie Reichbaum's Portfolio</a></center><br>
-		<p></p>
+	  <p>
+		<center>  <a href="https://www.linkedin.com/in/leslie-reichbaum-1292051a9/">
+			<img src="./images/linkedin_image.jpg" alt="My Linkedin Page">
+			</a></center><br>
+      </p>
 	</footer>
 
+	<script src="./JS/portfolio.js"></script>
+	
+</body>
+</html>
 		
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 </html>
