@@ -9,8 +9,8 @@ html {
 	  opacity: 1; /* This and transition affect the page loading fade in effect */
 	  transition: 3s opacity; /* This causes a 3 second fade in, you can change this time if you choose */
 	  letter-spacing: .2vw;
-	  font-family: Avant Garde, Helvetica; 
-	  font-size: 1.5vw;
+	  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+	  font-size: 2.5vw;
 	  
 	  }
   
