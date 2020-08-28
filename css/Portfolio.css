@@ -84,14 +84,14 @@ html {
   }
   
   /* This causes the video to zoom out from a zoomed in position upon page load */
-  @keyframes zoominoutsinglefeatured {
+  /* @keyframes zoominoutsinglefeatured {
 	  0% {
 		  transform: scale(1.5,1.5);
 	  }
 	  100% {
 		  transform: scale(1,1);
 	  }
-  }
+  } */
   
   /* Video */
   #Typing_Video {
