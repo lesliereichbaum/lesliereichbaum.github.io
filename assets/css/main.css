@@ -2779,7 +2779,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #e0b9bf;
+			background-color: rgb(23, 155, 82);
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2788,7 +2788,7 @@
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #e76278;
+				background-color: #df536a;
 			}
 
 			input[type="submit"].special:active,
@@ -3081,7 +3081,7 @@
 	}
 
 		.wrapper.style2 {
-			background: rgb(245, 130, 176);
+			background: rgb(23, 155, 82);
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3789,7 +3789,7 @@
 					}
 
 					#titleBar .toggle:before {
-						background: #e44c65;
+						background: rgb(23, 155, 82);
 						color: rgba(255, 255, 255, 0.5);
 						content: '\f0c9';
 						display: block;
