@@ -1,170 +1,190 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE HTML>
+<!--
+    Landed by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
+<head>
+    <title>Leslie Reichbaum's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="assets/css/myStyleSheet.css" rel="stylesheet" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+<body class="landing">
+    <div id="page-wrapper">
 
-<!-- Head -->
-	<head>
-		<meta charset="UTF-8">
-		<title>Leslie Reichbaum's Portfolio</title>
-		  <link rel="stylesheet" type="text/css" href="./css/Portfolio.css">
-	
-		</head>
-		  
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="https://lesliereichbaum.github.io">Welcome</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="https://lesliereichbaum.github.io">Home</a></li>
+                    <li><a href="#one">About Me</a></li>
+                    <li>
+                        <a href="#">My Projects</a>
+                        <ul>
+                            <li><a href="#oneExtension">Pizza Ordering App</a></li>
+                            <li><a href="#two">Tic Tac Toe Game</a></li>
+                            <li><a href="#three">Marketing Website Mockup</a></li>
+                            <li><a href="#four">Storyline 360 Examples</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#five" class="button special">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<!-- Body -->
-<body class="Background"> 
+        <!-- Banner -->
+        <section id="banner">
+            <div class="content">
+                <header>
+                    <h2>Hello, my name is Leslie.</h2>
+                    <p>I am a Front End Web Developer and Learning Designer.</p>
+                    <ul class="icons">
+                        <li><a href="https://www.linkedin.com/in/leslie-reichbaum/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://github.com/lesliereichbaum" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="#five" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                </header>
+                <span class="image"><img id="profile" src="img/photo.jpg" alt="" /></span>
+            </div>
+            <a href="#one" class="goto-next scrolly">Next</a>
+        </section>
 
-<!-- Navbar -->
-	<div class="Navbar">
-		<a class="active" href="#Home">Home</a> 
-		<a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
-		<a href="#About">About</a>
-		<a href="#GitHub">GitHub</a>
-		<a onclick="openForm()" ondblclick="closeForm()">Contact</a> <!-- This makes it so that our openForm function runs when we click Contact on the nav bar -->
-	</div>
+        <!-- One -->
+        <section id="one" class="spotlight style1 bottom">
+            <span class="image fit main"><img src="img/netherlands.jpg" alt="" /></span>
+            <div class="content centerText">
+                <div class="container">
+                    <div class="row">
+                        <div class="4u 12u$(medium)">
+                            <header>
+                                <h2>Leslie Reichbaum</h2>
+                                <p>My Story</p>
+                            </header>
+                        </div>
+                        <div class="4u 12u$(medium)">
+                            <p>
+                                I am from Cleveland, OH and spent many years living on the westcoast until I began to miss the seasons.  My Bachelor's degree is in Creative Arts Therapy and my Master's degree is in Education. While teaching, I realized I was fascinated by technology and how it impacted my students' learning. 
+                            </p>
+                        </div>
+                        <div class="4u$ 12u$(medium)">
+                            <p>
+                                To get a well-rounded foundation in web development, I enrolled in The Tech Academy's UI/UX Bootcamp . I am now a front end junior developer, skilled in HTML, CSS, SQL, JavaScript, and UI/UX design principles. I enjoy collecting records and taking long roadtrips.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#oneExtension" class="goto-next scrolly">Next</a>
+        </section>
 
-<!-- Home -->
-	<div id="Home">
-		<br> <!-- Breaks inserted to add space between navbar and first heading -->
-		<br>
-		
-<!-- Video -->
-		<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
-			<source src="./images/ocean_bird.mp4" type="video/mp4">
-			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
-		</video>
-	</div>
+        <!-- One Extension -->
+        <section id="oneExtension" class="spotlight style3 left">
+            <span class="image fit main bottom"><img src="img/PizzaAPPproject.PNG" alt="" /></span>
+            <div class="content centerText">
+                <header>
+                    <h2>Pizza Ordering Web Application</h2>
+                    <p></p>
+                </header>
+                <p>Built with Javascript, HTML, and CSS. The user can select their order and the total price will be calculated.</p>
+                <ul class="actions">
+                    <li><a href="https://github.com/lesliereichbaum/Pizza_Project#pizza_project" class="button icon alt fa-github">GitHub</a></li>
+                </ul>
+            </div>
+            <a href="#two" class="goto-next scrolly">Next</a>
+        </section>
 
-<!-- Video text --> 
-	<div class="Video_Text"> 
-		<h1 style="color:white;">Leslie Reichbaum's Portfolio</h1>
-			<p> 
-			  <strong>
-					<center>
-						<q>The power of imagination makes us infinite.
-						</q>	
-						<br>-John Muir<br>
-						<br>
-						Welcome to my portfolio website! <br>
-						<br>
-						<br>Thank you for stopping by and please reach out if you have any questions.
-					</center>	
-			  </strong>				
-			</p> 
-	</div>
+        <!-- Two -->
+        <section id="two" class="spotlight style2 right">
+            <span class="image fit main"><img src="img/tictactoepic.PNG" alt="" /></span>
+            <div class="content centerText">
+                <header>
+                    <h2>Tic Tac Toe</h2>
+                    <p></p>
+                </header>
+                <p>Utilizes Javascript, HTML, and CSS. The user can play a game of Tic-Tac-Toe against the computer. Sound effects included. </p>
+                <ul class="actions">
+                    <li><a href="https://github.com/lesliereichbaum/TicTacToe" class="button icon alt fa-github" id="#blueButton">GitHub</a></li>
+                </ul>
+            </div>
+            <a href="#three" class="goto-next scrolly">Next</a>
+        </section> 
 
-<!-- Slideshow section -->
-  <div id="Slideshow">
-    <div id="Slideshow_Background"> 
-      <div id="Slideshow_Container">
-        
-		<div class="mySlides fade">
-          <div class="Slide_Number">1 / 4</div>
-            <img class="Slide_Show_Images" src="./images/photo.jpg" style="width:100%">
-              <div class="text">I'm available to assist you on your project!</div>
-        </div>
-        
-		<div class="mySlides fade">
-          <div class="Slide_Number">2 / 4</div>
-            <img class="Slide_Show_Images" src="./images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
-              <div class="text">I am a Learning Designer,<br> trained in:<br>HTML, CSS, JavaScript, UI/UX Design and have years of experience creating engaging, differentiated curriculum.</div>
-        </div>
+        <!-- Three -->
+        <section id="three" class="spotlight style3 left">
+            <span class="image fit main bottom"><img src="img/mockupsScreenShot.PNG" alt="" /></span>
+            <div class="content centerText">
+                <header>
+                    <h2>Prosper Marketing Mockups</h2>
+                    <p></p>
+                </header>
+                <p>Mockup designs created with Adobe Photoshop for mobile, tablet and desktop.</p>
+                <!-- <ul class="actions">
+                    <li><a href=" class="button icon alt fa-github">GitHub</a></li>
+                </ul> -->
+            </div>
+            <a href="#four" class="goto-next scrolly">Next</a>
+        </section> 
 
-        <div class="mySlides fade">
-          <div class="Slide_Number">3 / 4</div>
-            <img class="Slide_Show_Images" src="./images/photoshoppic.jpg" style="width:100%">
-              <div class="text">I use Adobe Photoshop for mockups</div>
-        </div>
+        <!-- Four -->
+        <section id="four" class="spotlight style2 right">
+            <span class="image fit main"><img src="img/BuyingHomecourse.jpg" alt="" /></span>
+            <div class="content centerText">
+                <header>
+                    <h2>Articulate Storyline 360</h2>
+                    <p></p>
+                </header>
+                <p>Developed interactive course using ADDIE model for first time homebuyers.</p>
+                <!-- <ul class="actions">
+                    <li><a href="" class="button icon alt fa-github">GitHub</a></li>
+                </ul> -->
+            </div>
+            <a href="#five" class="goto-next scrolly">Next</a>
+        </section>
 
-		<div class="mySlides fade">
-	      <div class="Slide_Number">4 / 4</div>
-			<img class="Slide_Show_Images" src="./images/xdpic.jpg" style="width:100%">
-              <div class="text">and Adobe XD for Prototyping</div>
-			</div>
+        <!-- Five -->
+        <section id="five" class="wrapper style2 special fade">
+            <div class="container">
+                <h2>If you would like to contact me about my work:</h2>
+                <form method="post" action="https://formspree.io/mrgyynvr" class="container 50%">
+                    <div class="row uniform 50%">
+                        <div class="8u 12u$(xsmall)"><input type="text" name="name" id="email" placeholder="Enter Your Message" style="width:606px" /></div>
+                        <div class="8u 12u$(xsmall)"><input type="email" name="_replyto" id="email" placeholder="Your Email Address" /></div>
+                        <div class="4u$ 12u$(xsmall)"><input type="submit" value="Send" class="fit special" /></div>
+                    </div>
+                </form>
+            </div>
+        </section>
 
-	
-		  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-		  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-		
-	  </div>
-  <br>
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="www.linkedin.com/in/leslie-reichbaum" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/lesliereichbaum class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Leslie Reichbaum. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
 
-      <div style="text-align:center">
- 
-		<span class="dot" onclick="currentSlide(1)"></span> 
-		<span class="dot" onclick="currentSlide(2)"></span> 
-		<span class="dot" onclick="currentSlide(3)"></span> 
-		<span class="dot" onclick="currentSlide(4)"></span> 
-
-      </div>
     </div>
-  </div>
 
-
-
-<!-- About section -->
-  <div class="Row" id="About"> 
-	<div class="Column_2"> <!-- Left column -->
-	  <img src="./images/Development.jpg" alt="Laptop">
-	</div>
-  
-	<div class="Column_1"> <!-- Right column -->
-	  <h1>About</h2>
-	    <p>I am a Learning Designer from Cleveland, Oh with an M.A. in Education. 
-			 I work with various teaching platforms and have hands-on experience building responsive websites with HTML, CSS, and JavaScript.
-			 <br><br> In my years as a Learning Specialist, I developed a passion for using assistive technology and Universal Design theory to empower my students and collaborate with classroom teachers.<br><br>Outside of work, I enjoy writing and playing music and taking roadtrips.</p>
-	</div>
-  </div>
-
-<!-- GitHub section -->
-	<div class="Row" id="GitHub">
-		<div class="Column_1"> <!-- Left column -->
-			<h1>GitHub</h1>
-				<p>You can view my projects on my GitHub:<br>
-				<center><a href="https://github.com/lesliereichbaum" target="_blank">Click to see my work</a></center></p>
-		</div>
-		
-		<div class="Column_2"> <!-- Right column -->
-			<a href="https://github.com/lesliereichbaum" target="_blank"><img src="./images/GitHub.png" alt="GitHub"></a>
-		</div>
-	</div>
-</div>
-
-<!-- Contact section -->
-  <div id="Contact"> 
-    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
-	  <div class="form-popup" id="myForm">
-	    <form action="https://formspree.io/mrgyynvr" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-		<h1>Contact</h1>
-			<label for="name"><b>Name</b></label>
-			  <input type="text" placeholder="Type your name here" name="name" required>
-			<label for="phone"><b>Phone (optional)</b></label>
-			  <input type="text" placeholder="Enter your phone number here" name="phone">
-			<label for="email"><b>Email</b></label>		
-			  <input type="text" placeholder="Type your email address here" name="email" required>
-			<label for="message"><b>Message</b></label>
-			  <input type="text" placeholder="Type your message here" name="message">
- 
-    <button type="submit" class="btn">SUBMIT</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-	    </form>
-	  </div>
-  </div>
-	
-<!-- Footer section -->	
-	<footer>
-	  <p>
-		<center>  <a href="https://www.linkedin.com/in/leslie-reichbaum-1292051a9/">
-			<img src="./images/th.jpg" alt="My Linkedin Page">
-			</a></center><br>
-		<center>My Linkedin Page</center>
-      </p>
-	</footer>
-
-	<script src="./JS/portfolio.js"></script>
-	
-</body>
-</html>
-		
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>

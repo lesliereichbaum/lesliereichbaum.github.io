@@ -1,0 +1,25 @@
+﻿body {
+
+}
+
+h2{
+    font-weight:900;
+}
+
+.centerText{
+    text-align: center;
+}
+
+
+/*GitHub buttons*/
+
+a.button.icon.alt.fa-github {
+    background-color: #5480f1;
+}
+
+
+/*email forms*/
+
+input#email message{ 
+    width:606px;
+}
